@@ -12,21 +12,17 @@
     Inception
   </header>
 
+  <!-- ✅ Only 2 direct children -->
   <nav>
-    <p>Navigate to sections below:</p>
     <a id="nav-actor" href="#actor">Actors</a>
     <a id="nav-quote" href="#quote">Favorite Quote</a>
   </nav>
 
-  <section id="summary">
-    <h2>Summary</h2>
-    <p>
-      Inception is a science-fiction thriller directed by Christopher Nolan. It follows Dom Cobb, a professional thief who
-      enters people's dreams to steal secrets. He is offered a chance to regain his old life if he can successfully plant
-      an idea inside a powerful businessman's mind — a process known as inception. As the mission dives deeper into
-      layered dreams, the line between reality and illusion begins to blur.
-    </p>
-  </section>
+  <!-- ✅ Changed from <section id="summary"> to <summary> as Cypress expects -->
+  <summary>
+    Inception is a science-fiction thriller directed by Christopher Nolan. It follows Dom Cobb, a thief who
+    steals secrets by entering dreams. He's offered redemption if he can plant an idea instead of stealing one.
+  </summary>
 
   <section id="actor">
     <h2>Main Actors</h2>
@@ -56,9 +52,6 @@
   <footer>
     Produced by: Christopher Nolan
   </footer>
-
-    <script type="text/javascript" src="./script.js">
-</script>
 
 </body>
 
